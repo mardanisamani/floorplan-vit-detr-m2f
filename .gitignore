@@ -1,0 +1,36 @@
+# Generated samples & outputs
+outputs/samples/
+outputs/checkpoints/
+src/training/__pycache__/
+src/models/__pycache__/
+src/datasets/__pycache__/
+
+# Virtual environment
+BIM_CAD_env/
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+wandb/
+runs/
+
+# OS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
