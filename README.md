@@ -12,7 +12,7 @@ into indoor maps for wayfinding and spatial analytics.
 
 ## 1. Why transformers for BIM/CAD?
 
-MapsPeople turns raw floorplans into structured indoor maps. The pipeline
+Raw floorplans data is turned into structured indoor maps. The pipeline
 needs three levels of understanding, all of which transformers handle well:
 
 | Task | Why transformers | Model used here |
