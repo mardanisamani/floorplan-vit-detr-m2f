@@ -4,8 +4,8 @@ A compact, fully-runnable reference implementation of a transformer-based
 computer-vision pipeline for **object detection, semantic segmentation and
 room-type classification on CAD / BIM floorplan data**.
 
-This mirrors the kind of automated building-component extraction that
-[MapsPeople](https://www.mapspeople.com/) uses to convert BIM/CAD drawings
+This is the kind of automated building-component extraction that
+some companies use to convert BIM/CAD drawings
 into indoor maps for wayfinding and spatial analytics.
 
 ---
