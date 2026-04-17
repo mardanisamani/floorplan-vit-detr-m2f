@@ -4,16 +4,27 @@ A compact, fully-runnable reference implementation of a transformer-based
 computer-vision pipeline for **object detection, semantic segmentation and
 room-type classification on CAD / BIM floorplan data**.
 
+<<<<<<< HEAD
 This mirrors the kind of automated building-component extraction used in
 indoor-mapping, wayfinding and spatial-analytics pipelines that consume
 BIM/CAD drawings.
+=======
+This is the kind of automated building-component extraction that
+some companies use to convert BIM/CAD drawings
+into indoor maps for wayfinding and spatial analytics.
+>>>>>>> 6acdfc50f9a418fe287033027579d35fba912098
 
 ---
 
 ## 1. Why transformers for BIM/CAD?
 
+<<<<<<< HEAD
 Turning raw floorplans into structured indoor maps needs three levels of
 understanding, all of which transformers handle well:
+=======
+Raw floorplans data is turned into structured indoor maps. The pipeline
+needs three levels of understanding, all of which transformers handle well:
+>>>>>>> 6acdfc50f9a418fe287033027579d35fba912098
 
 | Task | Why transformers | Model used here |
 |---|---|---|
