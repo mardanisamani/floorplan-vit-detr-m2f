@@ -1,0 +1,32 @@
+# Default configuration for the BIM/CAD transformer pipeline
+
+dataset:
+  size: 256
+  n_train: 200
+  n_val:   40
+  seed:    0
+
+vit:
+  patch_size: 16
+  embed_dim:  192
+  depth:      6
+  n_heads:    4
+  dropout:    0.1
+
+detr:
+  d_model:    128
+  n_heads:    4
+  n_encoder:  3
+  n_decoder:  3
+  n_queries:  50
+
+mask2former:
+  d_model:    128
+  n_heads:    4
+  n_decoder:  3
+  n_queries:  20
+
+training:
+  epochs: 3
+  batch_size: 16
+  lr: 0.0003

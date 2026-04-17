@@ -1,0 +1,63 @@
+{
+  "cls_label": 1,
+  "cls_name": "meeting_room",
+  "n_components": 26,
+  "rooms": [
+    {
+      "type": "corridor",
+      "x0": 8,
+      "y0": 8,
+      "x1": 55,
+      "y1": 115
+    },
+    {
+      "type": "meeting_room",
+      "x0": 55,
+      "y0": 8,
+      "x1": 151,
+      "y1": 115
+    },
+    {
+      "type": "restroom",
+      "x0": 151,
+      "y0": 8,
+      "x1": 248,
+      "y1": 66
+    },
+    {
+      "type": "meeting_room",
+      "x0": 151,
+      "y0": 66,
+      "x1": 248,
+      "y1": 115
+    },
+    {
+      "type": "restroom",
+      "x0": 8,
+      "y0": 115,
+      "x1": 80,
+      "y1": 166
+    },
+    {
+      "type": "meeting_room",
+      "x0": 8,
+      "y0": 166,
+      "x1": 80,
+      "y1": 248
+    },
+    {
+      "type": "lobby",
+      "x0": 80,
+      "y0": 115,
+      "x1": 248,
+      "y1": 196
+    },
+    {
+      "type": "corridor",
+      "x0": 80,
+      "y0": 196,
+      "x1": 248,
+      "y1": 248
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+# Core
+torch>=2.0
+torchvision>=0.15
+numpy>=1.24
+Pillow>=10.0
+matplotlib>=3.7
+
+# Optimisation / matching
+scipy>=1.11          # linear_sum_assignment for the Hungarian matcher
+
+# Utilities
+tqdm>=4.65
+pyyaml>=6.0
+
+# Optional — uncomment to parse real BIM files
+# ifcopenshell>=0.7
