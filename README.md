@@ -4,16 +4,16 @@ A compact, fully-runnable reference implementation of a transformer-based
 computer-vision pipeline for **object detection, semantic segmentation and
 room-type classification on CAD / BIM floorplan data**.
 
-This mirrors the kind of automated building-component extraction that
-[MapsPeople](https://www.mapspeople.com/) uses to convert BIM/CAD drawings
-into indoor maps for wayfinding and spatial analytics.
+This mirrors the kind of automated building-component extraction used in
+indoor-mapping, wayfinding and spatial-analytics pipelines that consume
+BIM/CAD drawings.
 
 ---
 
 ## 1. Why transformers for BIM/CAD?
 
-MapsPeople turns raw floorplans into structured indoor maps. The pipeline
-needs three levels of understanding, all of which transformers handle well:
+Turning raw floorplans into structured indoor maps needs three levels of
+understanding, all of which transformers handle well:
 
 | Task | Why transformers | Model used here |
 |---|---|---|
@@ -22,8 +22,8 @@ needs three levels of understanding, all of which transformers handle well:
 | Segment walls, floors, rooms | Unified mask-transformer decoder | **Mask2Former-lite** |
 
 A CNN backbone still underlies each model, but the heads are pure
-transformers — the same family MapsPeople describes in their
-AI-for-BIM work.
+transformers — the same family used across modern indoor-mapping and
+BIM-automation work.
 
 ---
 
@@ -99,9 +99,9 @@ toilets in restrooms, etc.). Everything is seeded — regenerating is
 deterministic.
 
 > Why synthetic? Real IFC/CAD data is licence-restricted. A procedural
-> generator is free, scalable, mirrors the component ontology MapsPeople
-> cares about, and can be replaced by a real dataset (CubiCasa5K, R2V,
-> or parsed IFC) simply by swapping the `Dataset` class.
+> generator is free, scalable, mirrors the component ontology commonly
+> targeted in BIM automation, and can be replaced by a real dataset
+> (CubiCasa5K, R2V, or parsed IFC) simply by swapping the `Dataset` class.
 
 ---
 
@@ -127,14 +127,13 @@ A minimal variant of
 [Mask2Former](https://arxiv.org/abs/2112.01527): pixel decoder
 produces multi-scale features, a masked-attention transformer
 decoder emits N query embeddings, each query predicts *(class, mask)*.
-Ideal for MapsPeople-style unified wall / room / floor segmentation.
+Ideal for unified wall / room / floor segmentation.
 
 ---
 
-## 6. How this aligns with MapsPeople
+## 6. How this aligns with a BIM-to-indoor-map workflow
 
-MapsPeople converts BIM/CAD to indoor maps via their MapsIndoors
-platform. Their automation pipeline needs to:
+Converting BIM/CAD to indoor maps typically requires a pipeline that can:
 
 1. **Parse a plan** → ingest a floorplan image or IFC slice.
 2. **Classify spaces** → determine each room's function for POI tagging.
@@ -145,7 +144,7 @@ platform. Their automation pipeline needs to:
 
 This project mirrors those four steps with open, reproducible code:
 
-| MapsPeople step | This repo |
+| Pipeline step | This repo |
 |---|---|
 | Space classification | `ViT` on room crops |
 | Component detection | `DETR-lite` on full plan |

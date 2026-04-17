@@ -1,7 +1,7 @@
 """
 Synthetic CAD/BIM floorplan generator.
 
-Produces plan-view floorplans that mimic BIM exports MapsPeople processes
+Produces plan-view floorplans that mimic BIM exports typically used
 for indoor mapping. Each sample comes with:
 
 * RGB image   - drawn plan view (walls, floors, doors, windows, furniture)
